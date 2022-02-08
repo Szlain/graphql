@@ -44,6 +44,7 @@ const resolvers = {
 
 const server = new ApolloServer({ typeDefs, resolvers });
 console.log('e');
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 server.listen().then(({ url }: any) => {
   console.log(`🚀  Server ready at ${url}`);
 });
