@@ -1,16 +1,16 @@
 {
-  "root": "packages/graphql",
-  "sourceRoot": "packages/graphql/src",
+  "root": "apps/graphql",
+  "sourceRoot": "apps/graphql/src",
   "projectType": "application",
   "targets": {
     "build": {
       "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/graphql",
-        "main": "packages/graphql/src/index.ts",
-        "tsConfig": "packages/graphql/tsconfig.app.json",
-        "assets": ["packages/graphql/*.md"]
+        "outputPath": "dist/apps/graphql",
+        "main": "apps/graphql/src/index.ts",
+        "tsConfig": "apps/graphql/tsconfig.app.json",
+        "assets": ["apps/graphql/*.md"]
       }
     },
     "serve": {
@@ -23,14 +23,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["packages/graphql/**/*.ts"]
+        "lintFilePatterns": ["apps/graphql/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/graphql"],
+      "outputs": ["coverage/apps/graphql"],
       "options": {
-        "jestConfig": "packages/graphql/jest.config.js",
+        "jestConfig": "apps/graphql/jest.config.js",
         "passWithNoTests": true
       }
     }

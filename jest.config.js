@@ -10,5 +10,5 @@ module.exports = {
     '^.+\\.[tj]s$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/packages/graphql',
+  coverageDirectory: '../../coverage/apps/graphql',
 };
